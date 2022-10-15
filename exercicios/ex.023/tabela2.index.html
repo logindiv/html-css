@@ -12,6 +12,22 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+
+        }
+        caption{
+            background-color: darkgray;
+            padding: 10px;
+            font-weight: bolder;
+            font-size: 1.4em;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        thead > tr > th{
+            position: sticky;
+            top:0;
+            background-color: gray;     
         }
         td , th {
             border: 1px solid black;
@@ -31,10 +47,13 @@
         Uso de tabelas grandes
     </h1>
     <table>
+        <caption>
+            População por Estado
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>população</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px";>população</th>
             </tr>
         </thead>
         <tbody>
@@ -149,7 +168,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>213 317 639</strong></td>
             </tr>
         </tfoot>
