@@ -63,7 +63,7 @@ img#tv{
         display: none;}
 }
 @media screen and(min-width:1200px) {
-    body{
+    body {
         background-image: url(../imagens/back-tv.jpg);
     }
     img#phone{
